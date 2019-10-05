@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.reborn</groupId>
     <artifactId>metube</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>metube</name>
     <description>Demo project for Spring Boot</description>
 
@@ -63,6 +63,11 @@
             <version>5.1.10</version>
         </dependency>
         <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
@@ -76,15 +81,20 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.flywaydb</groupId>-->
+                <!--<artifactId>flyway-maven-plugin</artifactId>-->
+                <!--<version>5.2.4</version>-->
+                <!--<configuration>-->
+                    <!--<url>jdbc:mysql://106.14.148.233:3306/metube?useUnicode=true&amp;characterEncoding=utf-8</url>-->
+                    <!--<user>root</user>-->
+                    <!--<password>123456</password>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
             <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>5.2.4</version>
-                <configuration>
-                    <url>jdbc:mysql://106.14.148.233:3306/metube?useUnicode=true&amp;characterEncoding=utf-8</url>
-                    <user>root</user>
-                    <password>123456</password>
-                </configuration>
+                <groupId>com.iwhalecloud.common</groupId>
+                <artifactId>maven-loc-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </plugin>
         </plugins>
     </build>

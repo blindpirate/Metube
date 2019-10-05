@@ -2,6 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.reborn.metube.mapper">
+<mapper namespace="com.reborn.metube.mapper.UserMapper">
 
+    <select id="selectAllUsers" resultType="com.reborn.metube.User">
+        select * from user
+    </select>
 </mapper>

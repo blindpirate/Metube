@@ -21,9 +21,8 @@ public class MetubeApplicationTests {
 
     @Test
     public void contextLoads() {
-        PageHelper.startPage(1, 2);
+        PageHelper.startPage(2, 2);
         List<User> users = userMapper.selectAll();
-        PageInfo<User> userPageInfo = new PageInfo<>(users);
-        return;
+        System.out.println("users = " + users);
     }
 }
